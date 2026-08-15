@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Chewy&family=Dancing+Script:wght@400..700&family=Knewave&family=Luckiest+Guy&family=Orbitron:wght@400..900&family=Syne+Mono&family=Titan+One&display=swap');
+@import "tailwindcss";
+
+:root{
+    --headingFont:24px;
+}
+
+h1 {
+  font-family: "Dancing script", sans-serif;
+  font-weight: bolder;
+  font-size:var(--headingFont);
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn{
+  position:relative;
+}
+
+.btn::before{
+  position: absolute;
+  content: "";
+  width:0%;
+  height:1px;
+  z-index: 1;
+  background-color: white;
+  bottom: -2px;
+  left: 0;
+}
+
+.btn:hover::before{
+    width: 100%;
+    transition:.3s;
+}
+
