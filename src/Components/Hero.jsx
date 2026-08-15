@@ -1,6 +1,7 @@
 import React from 'react'
 import CountUp from "countup";
 import { ArrowLeft, ArrowRight } from 'lucide-react'
+import heroPic  from '../assets/pexels-kirti-phadke-316475723-17947890.jpg'
 
 export const Hero = () => {
   return (
@@ -26,7 +27,7 @@ export const Hero = () => {
       </div>
 
       <div className=''>
-         <img src="https://images.pexels.com/photos/17947890/pexels-photo-17947890.jpeg" alt="Interior design" loading='lazy' className='w-full object-cover h-screen'/>
+         <img src={heroPic} alt="Interior design" loading='lazy' className='w-full object-cover h-screen'/>
       </div>
     </div>
   )

@@ -10,15 +10,15 @@ import { Blog } from './Blog'
 
 export const Home = () => {
   return (
-    <div>
+    <div className='bg-black text-white'>
         <div className=''>
             <Hero/>
-        </div>
-
-        {/* <div>
-            <About/>
         </div><br />
 
+        <div>
+            <About/>
+        </div><br />
+        {/*
         <div>
             <Services/>
         </div><br />

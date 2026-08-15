@@ -5,10 +5,9 @@
     --headingFont:24px;
 }
 
-h1 {
+h1,h2 {
   font-family: "Dancing script", sans-serif;
   font-weight: bolder;
-  font-size:var(--headingFont);
 }
 
 button {
