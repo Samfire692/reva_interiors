@@ -22,7 +22,7 @@ export const Navbar = () => {
               ))}
             </div>
 
-            <button className='border rounded-lg p-1 lg:hidden' onClick={()=> setMenu(!menu)}>
+            <button className='border rounded-lg p-1 lg:hidden h-fit' onClick={()=> setMenu(!menu)}>
               {!menu ? 
                <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
