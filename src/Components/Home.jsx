@@ -18,10 +18,11 @@ export const Home = () => {
         <div>
             <About/>
         </div><br />
-        {/*
+
         <div>
             <Services/>
         </div><br />
+        {/*
 
         <div>
             <Projects/>

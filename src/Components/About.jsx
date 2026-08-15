@@ -5,13 +5,13 @@ export const About = () => {
   return (
     <div className='flex flex-col-reverse lg:flex-row justify-evenly py-4 px-2'>
       <div className=''>
-        <img src={aboutImg} alt="" className='lg:w-lg w-full h-[80vh] object-cover'/>
+        <img src={aboutImg} alt="" className='lg:w-lg w-full max-h-[80vh] object-cover'/>
       </div>
 
       <div className='h-fit my-auto lg:w-xl p-2 flex flex-col gap-4'>
          <p className='uppercase font-bold text-white/80 text-sm' style={{letterSpacing:"2px"}}>About Reva Interiors</p>
 
-         <h2 className='md:text-5xl font-bolder text-4xl uppercase' style={{lineHeight:"1.1em"}}>
+         <h2 className='lg:text-5xl font-bolder text-4xl uppercase' style={{lineHeight:"1.1em"}}>
            More than interiors. A reflection of you.
          </h2>
 

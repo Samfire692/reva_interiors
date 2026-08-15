@@ -12,8 +12,9 @@ export const Navbar = () => {
     <>
       <nav className='p-3.5 fixed z-30 w-full text-white backdrop-blur-2xl'>
         <div className='flex lg:justify-start justify-between'>
-            <div className='px-3'>
-             <h1 className='uppercase'>Reva</h1>
+            <div className='px-3 my-auto'>
+             <h1 className='uppercase text-2xl' style={{letterSpacing:"3px"}}>Reva</h1>
+             <span className='-mt-2 block uppercase' style={{fontFamily:"sans-serif", letterSpacing:"2px"}}>Interiors</span>
             </div>
 
             <div className='lg:flex justify-around gap-2 w-md m-auto hidden'>
@@ -22,7 +23,7 @@ export const Navbar = () => {
               ))}
             </div>
 
-            <button className='border rounded-lg p-1 lg:hidden h-fit' onClick={()=> setMenu(!menu)}>
+            <button className='border rounded-lg p-1 lg:hidden h-fit my-auto' onClick={()=> setMenu(!menu)}>
               {!menu ? 
                <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
