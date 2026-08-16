@@ -21,12 +21,12 @@ export const Home = () => {
 
         <div>
             <Services/>
-        </div><br />
-        {/*
+        </div>
 
         <div>
             <Projects/>
         </div><br />
+        {/*
 
         <div>
             <Process/>

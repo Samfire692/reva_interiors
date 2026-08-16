@@ -12,7 +12,7 @@ export const Hero = () => {
             <h2 className='md:text-7xl text-5xl uppercase font-bolder' style={{fontFamily:"Dancing Script", letterSpacing:"3px"}}>Reva Interiors</h2>
             <p className='md:text-md text-sm mt-1 font-medium' style={{letterSpacing:"1.5px"}}>Transforming spaces into beautiful, functional interiors.</p>
             <div className='mt-4 flex gap-2'>
-             <button className='border p-2.5 font-bold rounded-lg hover:bg-black/70 hover:border-black/70 focus:bg-black/70 focus:border-black/70 transition-all duration-500 flex gap-2 group'>Book an Appointment <ArrowRight className='my-auto -rotate-30 group-hover:rotate-0 group-focus:rotate-0 transition-all duration-400' size={20}/> </button>
+             <button className='border p-2.5 font-bold rounded-lg hover:bg-black/70 hover:border-black/70 focus:bg-black/70 focus:border-black/70 transition-all duration-500 flex gap-2 group'>Book an Appointment <ArrowRight className='my-auto -rotate-30 group-hover:rotate-0 group-focus:rotate-0 transition-all' size={20}/> </button>
              <button className='p-2.5 font-bold rounded-lg max-w-40 bg-amber-300/30'>Contact Us</button>
             </div>
          </div>

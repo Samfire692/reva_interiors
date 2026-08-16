@@ -34,20 +34,26 @@ export const Services = () => {
     },
   ])
   return (
-    <div className='py-6'>
+    <div className='p-6 bg-white/10'>
       
-      <div>
-        <p className='uppercase font-bold text-amber-300/80 text-lg text-center' style={{letterSpacing:"2px", fontFamily:"cursive"}}>Our Services</p>
-      </div><br />
+      <div className=''>
+        <p className='uppercase text-white/40 text-sm' style={{letterSpacing:"3px", fontFamily:"Titan"}}>Services 01 - 0{services.length}</p>
 
-      <div behavior="" direction="" className="grid md:grid-cols-3 gap-3 mq p-3">
+        <h3 className='text-5xl max-w-xl py-5 text-white/90' style={{fontFamily:"sans-serif", letterSpacing:"1.8px"}}>
+          A complete practice, held under a single roof.
+        </h3>
+      </div>
+
+      <div behavior="" direction="" className="grid md:grid-cols-3 mt-3">
         {services.map((serv, index)=> (
-           <div key={serv.id} className='rounded-2xl w-fit p-6 h-55 text-amber-400/70 grid inset-0 bg-black border border-transparent hover:rotate-6 transition-all duration-500'>
-             <p className='p-1 text-sm text-amber-500 font-bold'>0{index + 1}</p>
+           <div key={serv.id} className='w-fit h-55 grid inset-0 bg-black border border-slate-50/10 transition-all duration-500 mq'>
+             <div className='p-5'>
+               <p className='p-1 text-xs text-amber-400/80' style={{fontFamily:"Anton", letterSpacing:"2px"}}>0{index + 1}</p>
 
-             <div className='p-1'>
-               <p className='text-2xl font-bold'>{serv.title}</p>
-               <p className='mt-4'>{serv.text}</p>
+                <div className='p-1 mt-6'>
+                 <p className='text-3xl text-white' style={{fontFamily:"Titan", letterSpacing:"2px"}}>{serv.title}</p>
+                 <p className='mt-3 text-white/60 font-extralight text-sm' style={{fontFamily:"sans-serif", letterSpacing:"2px"}}>{serv.text}</p>
+                </div>
              </div>
            </div>
         ))}

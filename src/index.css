@@ -2,11 +2,11 @@
 @import "tailwindcss";
 
 :root{
-    --headingFont:24px;
+    --headingFont:"Dancing script", sans-serif;
 }
 
 h1,h2 {
-  font-family: "Dancing script", sans-serif;
+  font-family:var(--headingFont);
   font-weight: bolder;
 }
 
@@ -35,30 +35,21 @@ button {
 }
 
 .mq {
-  background: linear-gradient(
-    180deg,
-    black 0%,
-    black 35%,
-    rgba(255, 200, 0, 0.25) 50%,
-    black 65%,
-    black 100%
-  );
-  background-size: 100% 300%;
-  animation: back 12s ease-in-out infinite;
-  border: 0;
+  position: relative; 
 }
 
-@keyframes back {
-  0% {
-    background-position: 50% 0%;
-  }
-
-  50% {
-    background-position: 50% 100%;
-  }
-
-  100% {
-    background-position: 50% 0%;
-  }
+.mq::before{
+  content: "";
+  background-color:goldenrod;
+  width:0;
+  height: 1px;
+  bottom: 0;
+  position: absolute;
 }
+
+.mq:hover::before{
+  width: 100%;
+  transition: .8s;
+}
+
 
