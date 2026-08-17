@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Chewy&family=Dancing+Script:wght@400..700&family=Knewave&family=Luckiest+Guy&family=Orbitron:wght@400..900&family=Syne+Mono&family=Titan+One&display=swap');
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root{
     --headingFont:"Dancing script", sans-serif;
 }
@@ -10,7 +14,7 @@ h1,h2 {
   font-weight: bolder;
 }
 
-button {
+button, a {
     cursor: pointer;
 }
 
@@ -45,11 +49,38 @@ button {
   height: 1px;
   bottom: 0;
   position: absolute;
+  left: 0;
 }
 
 .mq:hover::before{
   width: 100%;
   transition: .8s;
+}
+
+.proc{
+  position:relative;
+}
+
+.proc::before{
+  content: "";
+  position: absolute;
+  width:15px;
+  height:15px;
+  background:lightgrey;
+  z-index: 10;
+  left:0;
+  top:0px;
+  border-radius:50%;
+}
+
+.proc::after{
+  content:"";
+  position: absolute;
+  width:2px;
+  height:100%;
+  background:rgba(128, 128, 128, 0.258);
+  left:6px;
+  top:0px;
 }
 
 

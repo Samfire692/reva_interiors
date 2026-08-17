@@ -39,7 +39,7 @@ export const Services = () => {
       <div className=''>
         <p className='uppercase text-white/40 text-sm' style={{letterSpacing:"3px", fontFamily:"Titan"}}>Services 01 - 0{services.length}</p>
 
-        <h3 className='text-5xl max-w-xl py-5 text-white/90' style={{fontFamily:"sans-serif", letterSpacing:"1.8px"}}>
+        <h3 className='md:text-5xl text-4xl max-w-xl py-5 text-white/90' style={{fontFamily:"sans-serif", letterSpacing:"1.8px"}}>
           A complete practice, held under a single roof.
         </h3>
       </div>

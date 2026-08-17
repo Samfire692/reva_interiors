@@ -11,38 +11,40 @@ import { Blog } from './Blog'
 export const Home = () => {
   return (
     <div className='bg-black text-white'>
-        <div className=''>
+        <div className='' id='hero'>
             <Hero/>
         </div><br />
 
-        <div>
+        <div id='about' className=' scroll-my-18'>
             <About/>
         </div><br />
 
-        <div>
+        <div id='services' className=' scroll-my-18'>
             <Services/>
         </div>
 
-        <div>
+        <div id='projects' className=' scroll-my-18'>
             <Projects/>
         </div><br />
-        {/*
 
-        <div>
+        <div id="process" className=' scroll-my-18'>
             <Process/>
         </div><br />
 
-        <div>
+        <div id="reviews" className=' scroll-my-18'>
             <Testimonial/>
         </div><br />
 
-        <div>
-            <Contact/>
-        </div><br />
+        <div className=''>
 
-        <div>
-            <Blog/>
-        </div><br /> */}
+            <div id='booking' className=' scroll-my-18'>
+              <Blog/>
+            </div>
+
+            <div id='contacts' className=''>
+              <Contact/>
+            </div>
+        </div>
     </div>
   )
 }

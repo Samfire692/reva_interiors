@@ -3,24 +3,27 @@ import React, { useState } from 'react'
 export const Navbar = () => {
 
   const [menu, setMenu] = useState(false);
-  const Links = [
-    "About", "Services", "Projects", "Process", "Reviews"
-  ]
+ const Links = [
+  { name: "About", id: "about" },
+  { name: "Services", id: "services" },
+  { name: "Projects", id: "projects" },
+  { name: "Process", id: "process" },
+  { name: "Reviews", id: "reviews" }
+]
  
 
   return (
     <>
       <nav className='p-3.5 fixed z-30 w-full text-white backdrop-blur-2xl'>
         <div className='flex lg:justify-start justify-between'>
-            <div className='px-3 my-auto'>
+            <a href='#hero' className='px-3 my-auto'>
              <h1 className='uppercase text-2xl' style={{letterSpacing:"3px"}}>Reva</h1>
              <span className='-mt-2 block uppercase' style={{fontFamily:"sans-serif", letterSpacing:"2px"}}>Interiors</span>
-            </div>
+            </a>
 
             <div className='lg:flex justify-around gap-2 w-md m-auto hidden'>
               {Links.map((lnk)=> (
-               <p className='uppercase text-xs font-medium cursor-pointer btn' style={{letterSpacing:"1.5px"}}>{lnk}</p>
-              ))}
+                <a key={lnk.id} href={`#${lnk.id}`} className='uppercase text-xs font-medium cursor-pointer btn' style={{letterSpacing:"1.5px"}}> {lnk.name}</a>))}
             </div>
 
             <button className='border rounded-lg p-1 lg:hidden h-fit my-auto' onClick={()=> setMenu(!menu)}>
@@ -46,8 +49,7 @@ export const Navbar = () => {
            {menu && (
              <div className='grid gap-5 mt-3'>
                {Links.map((lnk)=> (
-                <p className='uppercase text-xs font-medium text-center cursor-pointer btn p-0.5' style={{letterSpacing:"1.5px"}}>{lnk}</p>
-               ))}
+                 <a key={lnk.id} href={`#${lnk.id}`} className='uppercase text-xs font-medium text-center cursor-pointer btn p-0.5' style={{letterSpacing:"1.5px"}} onClick={() => setMenu(false)}> {lnk.name} </a>))}
              </div>
            )}
          </div>

@@ -64,7 +64,7 @@ export const Projects = () => {
       <div>
          <p className='uppercase text-white/40 text-sm' style={{letterSpacing:"3px", fontFamily:"Titan"}}>Reva Projects 01 - 0{projects.length}</p>
 
-          <h3 className='text-5xl max-w-xl py-5 text-white/90' style={{fontFamily:"sans-serif", letterSpacing:"1.8px"}}>
+          <h3 className='md:text-5xl text-4xl max-w-xl py-5 text-white/90' style={{fontFamily:"sans-serif", letterSpacing:"1.8px"}}>
           Every project is a portrait of its client
          </h3>
       </div>
