@@ -14,7 +14,7 @@ export const Projects = () => {
       id:0,
       type:"Residential",
       year:"2026",
-      title:"Lorem, ipsum dolor.",
+      title:"Residential Interior.",
       city:"Lagos State, Nigeria",
       before:"https://images.pexels.com/photos/7937303/pexels-photo-7937303.jpeg",
       after:"https://images.pexels.com/photos/36511375/pexels-photo-36511375.jpeg"
@@ -24,7 +24,7 @@ export const Projects = () => {
       id:1,
       type:"Luxury Home",
       year:"2026",
-      title:"Lorem, ipsum dolor.",
+      title:"Luxury Home Interior.",
       city:"Ogun State, Nigeria",
       before:before1,
       after:after1
@@ -34,7 +34,7 @@ export const Projects = () => {
       id:2,
       type:"Office work",
       year:"2026",
-      title:"Lorem, ipsum dolor.",
+      title:"Office Interior.",
       city:"Ogun State, Nigeria",
       before:"https://images.pexels.com/photos/35090156/pexels-photo-35090156.jpeg",
       after:"https://images.pexels.com/photos/36631701/pexels-photo-36631701.jpeg"
