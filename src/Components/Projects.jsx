@@ -34,7 +34,7 @@ export const Projects = () => {
       id:2,
       type:"Office work",
       year:"2026",
-      title:"Office Interior.",
+      title:"Office Interiors.",
       city:"Ogun State, Nigeria",
       before:"https://images.pexels.com/photos/35090156/pexels-photo-35090156.jpeg",
       after:"https://images.pexels.com/photos/36631701/pexels-photo-36631701.jpeg"
